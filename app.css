@@ -13,6 +13,7 @@
     --second-color: #3a3a3a;
     --txt-color: #bbbbbb;
     --txt-white: #fff;
+    --bg-black: #000;
     /*  */
     --header-height: 144px;
     --header-padding: 93px;
@@ -265,7 +266,7 @@ header.shrink {
 }
 
 .section {
-    padding: 12rem 0;
+    padding: 12rem 0 0;
 }
 
 .section-content {
@@ -291,7 +292,7 @@ header.shrink {
     z-index: -1;
 }
 
-.main-tile {
+.main-title {
     font-size: 3.5rem;
     z-index: 1;
 }
@@ -327,4 +328,121 @@ header.shrink {
     bottom: 0;
     color: var(--txt-white);
     text-transform: capitalize;
+}
+
+.btn-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: var(--txt-white);
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    background-color: var(--txt-white);
+    color: var(--main-color);
+}
+
+.product-card {
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease 0s;
+}
+
+.product-card:hover {
+    background-color: var(--bg-black);
+}
+
+.product-card-img {
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.product-card-large .product-name {
+    font-size: 3rem;
+}
+
+.product-price {
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.product-card-large .product-price {
+    font-size: 2rem;
+}
+
+.product-card-large .btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.col-center {
+    display: flex;
+    align-items: center;
+}
+
+.special-section {
+    position: relative;
+    margin-bottom: 290px;
+    padding-top: 4rem;
+}
+
+.special-section>.section-title {
+    text-align: right;
+    padding: 4rem 7rem;
+    background-color: var(--bg-black);
+}
+
+.special-section .section-title {
+    position: relative;
+    font-size: 3.5rem;
+    counter-reset: var(--txt-white);
+    left: 0;
+    z-index: unset;
+}
+
+.special-section .second-title {
+    position: unset;
+}
+
+.special-section .main-title {
+    font-size: 9rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+}
+
+.special-section .section-title .btn {
+    position: relative;
+    right: unset;
+    top: unset;
+    font-size: 2rem;
+}
+
+.special-section .special-price {
+    font-size: 3rem;
+    color: var(--txt-white);
+    margin-bottom: 2rem;
+}
+
+.special-img {
+    width: 50%;
+    position: absolute;
+    left: 7rem;
+    bottom: -290px;
 }
