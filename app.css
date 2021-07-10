@@ -409,16 +409,12 @@ header.shrink {
     background-color: var(--bg-black);
 }
 
-.special-section .section-title {
+.special-section .second-title {
     position: relative;
     font-size: 3.5rem;
-    counter-reset: var(--txt-white);
+    color: var(--txt-white);
     left: 0;
     z-index: unset;
-}
-
-.special-section .second-title {
-    position: unset;
 }
 
 .special-section .main-title {
