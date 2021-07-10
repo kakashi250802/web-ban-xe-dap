@@ -41,7 +41,7 @@ hero_slide.addEventListener('mouseout', () => hero_slide_play = true)
 
 setTimeout(() => hero_slide_items[0].classList.add('active'), 300);
 // auto slide
-// setInterval(() => {
-//     if (!hero_slide_play) return
-//     nextSlide();
-// }, 5000);
+setInterval(() => {
+    if (!hero_slide_play) return
+    nextSlide();
+}, 5000);
