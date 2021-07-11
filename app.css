@@ -531,3 +531,33 @@ footer {
     text-transform: uppercase;
     color: var(--txt-white);
 }
+
+.to-right {
+    transform: translateX(-200px);
+}
+
+.to-left {
+    transform: translateX(200px);
+}
+
+.to-left,
+.to-right,
+.to-top {
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.to-right.show,
+.to-left.show {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+
+.to-top {
+    transform: translateY(100px);
+}
+
+.to-top.show {
+    transform: translateY(0);
+    opacity: 1;
+}
