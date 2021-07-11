@@ -442,3 +442,92 @@ header.shrink {
     left: 7rem;
     bottom: -290px;
 }
+
+.new-card {
+    padding: 28px;
+}
+
+.news-card-img {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.img-wrapper,
+.img-wrapper .img {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.img-wrapper .img {
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease 0s;
+}
+
+.news-card :hover .img {
+    transform: scale(1.2);
+}
+
+.news-card-img,
+.news-title,
+.news-preview {
+    margin-bottom: 20px;
+}
+
+.news-title {
+    font-size: 2rem;
+    color: var(--txt-white);
+}
+
+footer {
+    background-color: var(--second-color);
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+.footer-desc {
+    margin: 30px 0;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials>li~li {
+    margin-left: 20px;
+}
+
+.socials>li>a {
+    font-size: 1.5rem;
+}
+
+.socials>li>a :hover {
+    color: var(--txt-white);
+}
+
+.footer-menu>li~li {
+    margin-top: 20px;
+}
+
+.footer-menu>li>a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.footer-menu>li>a:hover {
+    color: var(--txt-white)
+}
+
+.subscribe-form>input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.footer-header {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--txt-white);
+}
