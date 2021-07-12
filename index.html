@@ -11,11 +11,10 @@
     <!-- app css -->
     <link rel="stylesheet" href="./app.css">
     <link rel="stylesheet" href="./gird.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css">
 </head>
 
 <body>
-    <div id="#my-scrollbar">
+    <div class="container">
         <!-- header -->
         <header>
             <a href="#" class="logo">
@@ -595,35 +594,21 @@
 
     </div>
     <!-- app js -->
-    <script src="https://unpkg.com/smooth-scrollbar@8.6.2/dist/smooth-scrollbar.js"></script>
     <script src="./app.js "></script>
+
+    <script src="./smooth-scrollbar.js"></script>
     <script>
         var Scrollbar = window.Scrollbar;
-        Scrollbar.initAll({
+        const options = {
+            'damping': 0.3,
+            'plugins': {
+                'endable': true,
+                'effect': 'bounce',
+                'damping': 0.3,
 
-            // Momentum reduction damping factor, a float value between (0, 1)
-            damping: 0.06,
-
-            // Minimal size for scrollbar thumb.
-
-            // Render scrolling by integer pixels
-            renderByPixels: true,
-
-            // Whether allow upper scrollable content to continue scrolling when current scrollbar reaches edge. 
-            // When set to 'auto', it will be enabled on nested scrollbars, and disabled on first-class scrollbars.
-            continuousScrolling: true,
-
-            // Keep scrollbar tracks always visible.
-            alwaysShowTracks: false,
-
-            // Element to be used as a listener for mouse wheel scroll events. 
-            // By default, the container element is used.
-            wheelEventTarget: null,
-
-            // plugins
-            plugins: {}
-
-        });
+            }
+        }
+        Scrollbar.init(document.querySelector('.container'), options);
     </script>
 </body>
 
